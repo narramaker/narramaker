@@ -1,16 +1,36 @@
-## Hi there 👋
+# NarraMaker
 
-<!--
-**narramaker/narramaker** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+PowerPoint でナレーション・アニメーション付きの動画作成を支援するツールです。  
+スライドノートに記載したナレーション指示に基づいて、図形のアニメーションや音声ナレーションを生成します。
 
-Here are some ideas to get you started:
+## 概要
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- ナレーション指示をテキストで表現（読み上げテキスト、モーションポインター・アニメーション動作、効果音など）
+- ナレーション指示の編集 → 生成 → MP4ファイル出力 の制作サイクルで保守性の高いコンテンツを作成
+- PowerPoint 機能だけ使用した音声の再生・アニメーション実行 → 再生環境に特別なアプリは不要
+- 音声合成エンジン（AivisSpeech / VOICEVOX）との連携 (音声合成利用時は必須)
+- PowerPointアニメーションとの統合
+- 出力形式: MP4ファイル、MP4埋め込みの.pptmファイル、再生専用.ppsx(MP4なし)
+
+## 現在の公開内容
+
+- `NarraMaker.ppam`（PowerPointアドイン形式）
+  - 初期機能を含むバイナリ版
+  - ソースコードは整理がつき次第、別途公開予定
+
+## 利用方法
+
+1. PowerPointで `.ppam` を読み込み、アドインとして登録
+2. リボンに追加された「NarraMaker」タブから操作
+3. 詳細な使い方は今後ドキュメント化予定
+
+## ライセンスと著作権について
+
+本ツールはオープンソース化を予定していますが、**公開済みバージョン（ppam含む）に関する著作権は放棄していません**。  
+著作権者の許可なく再配布・改変・商用利用することはご遠慮ください。  
+正式なライセンスはソースコード公開時に明示します。
+
+## 注意事項
+
+- 本リポジトリは静かに公開しており、積極的な展開は行っていません。
+- バグ報告や改善提案は歓迎ですが、対応は不定期です。
