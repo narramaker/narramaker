@@ -1,4 +1,4 @@
-# NarraMaker
+# [NarraMaker](https://github.com/narramaker/narramaker/wiki)
 
 PowerPoint でナレーション・アニメーション付きの動画作成を支援するツールです。  
 スライドノートに記載したナレーション指示に基づいて、音声ナレーションやアニメーションを生成します。
