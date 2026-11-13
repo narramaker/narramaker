@@ -2,7 +2,7 @@ site_name: NarraMaker ドキュメント
 site_description: NarraMaker の使い方とリファレンス
 
 theme:
-  name: mkdocs
+  name: material
   locale: ja
 
 nav:
