@@ -3,7 +3,7 @@ site_description: NarraMaker の使い方とリファレンス
 
 theme:
   name: material
-  locale: ja
+  language: ja
 
 nav:
   - ホーム: index.md
