@@ -27,6 +27,19 @@ PowerPoint でナレーション・アニメーション付きの動画作成を
 2. リボンに追加された「NarraMaker」タブから操作
 3. 詳細な使い方は今後ドキュメント化予定
 
+## ドキュメントの公開
+
+`docs/` 配下の Markdown ファイルは MkDocs で GitHub Pages に公開します。`main` ブランチへの push でビルド・公開され、プルリクエストではビルドのみ実行されます。
+
+初回のみ、GitHub リポジトリの **Settings > Pages > Build and deployment** で **Source** を **GitHub Actions** に設定してください。
+
+ローカルでドキュメントを確認する場合：
+
+```shell
+python -m pip install -r requirements.txt
+python -m mkdocs serve
+```
+
 ## ライセンスと著作権について
 
 - 本ソフトウェアは当方に許可を得ることく、誰でも無償で期限なく自由に使用できます。

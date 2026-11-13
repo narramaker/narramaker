@@ -1,0 +1,11 @@
+site_name: NarraMaker ドキュメント
+site_description: NarraMaker の使い方とリファレンス
+
+theme:
+  name: mkdocs
+  locale: ja
+
+nav:
+  - ホーム: index.md
+  - ディレクティブ: pages_test.md
+  - リボン機能: ui_7.2.md

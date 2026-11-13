@@ -134,5 +134,5 @@ NarraMaker のリボンにあるメニュー・ボタンの目的と、利用で
 
 ## 参照元
 
-- リボン定義：[CustomUI/customUI_2.7.0.41.xml](./CustomUI/customUI_2.7.0.41.xml)
-- VBA ソース：[VBAProject/2.7.0.45_末尾］不調対応](./VBAProject/2.7.0.45_末尾］不調対応)
+- リボン定義：`CustomUI/customUI_2.7.0.41.xml`（ファイルは公開リポジトリに含まれていません）
+- VBA ソース：`VBAProject/2.7.0.45_末尾］不調対応`（ファイルは公開リポジトリに含まれていません）
