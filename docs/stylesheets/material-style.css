@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap");
+
+:root {
+  --bs-primary: #4051b5;
+  --bs-primary-rgb: 64, 81, 181;
+  --bs-link-color: #526cfe;
+  --bs-link-color-rgb: 82, 108, 254;
+  --bs-link-hover-color: #4051b5;
+  --bs-link-hover-color-rgb: 64, 81, 181;
+  --bs-body-color: #212121;
+  --bs-body-bg: #fff;
+}
+
+body {
+  color: var(--bs-body-color);
+  font-family: Roboto, "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.navbar {
+  --bs-navbar-color: rgba(255, 255, 255, 0.87);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-md-9 h1,
+.col-md-9 h2,
+.col-md-9 h3,
+.col-md-9 h4,
+.col-md-9 h5,
+.col-md-9 h6 {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.col-md-9 h1 {
+  font-size: 2rem;
+}
+
+.col-md-9 h2 {
+  font-size: 1.5625rem;
+}
+
+.col-md-9 h3 {
+  font-size: 1.25rem;
+}
+
+.col-md-9 h4,
+.col-md-9 h5,
+.col-md-9 h6 {
+  font-size: 1rem;
+}
+
+.bs-sidebar {
+  font-size: 0.875rem;
+}
+
+code,
+pre code {
+  font-family: "Roboto Mono", "Noto Sans Mono", Consolas, monospace;
+}
+
+code {
+  font-size: 0.85em;
+}
+
+pre code {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
