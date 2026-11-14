@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>リボン機能 - NarraMaker ドキュメント</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../stylesheets/material-style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">NarraMaker ドキュメント</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">ホーム</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages_test/" class="nav-link">ディレクティブ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">リボン機能</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../pages_test/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#narramaker" class="nav-link">NarraMaker リボン機能 (たたき台)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">この資料について</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">リボン機能一覧</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="narramaker">NarraMaker リボン機能 (たたき台)</h1>
+<h4 id="_1">適用バージョン</h4>
+<ul>
+<li>NarraMaker 2.7</li>
+</ul>
+<h2 id="_2">この資料について</h2>
+<p>NarraMaker のリボンにあるメニュー・ボタンの目的と、利用できる操作をまとめた一覧です。ユーザー向けヘルプの初稿として、各項目を「目的・できること」「対象・補足」の観点で整理しています。</p>
+<p>記載内容はリボン定義と VBA ソースの表示名・ツールチップをもとにしています。実行条件や処理の詳細が明示されていない箇所は、断定を避けています。</p>
+<h2 id="_3">リボン機能一覧</h2>
+<p><img alt="image" src="https://github.com/user-attachments/assets/f12e9b65-8ef2-4fc2-af91-82e1c2a08802" /></p>
+<h3 id="_4">システム</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/39906092-434b-4d69-b34e-59c649f37ceb" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本設定</td>
+<td>NarraMaker と音声合成に関する基本設定を行います。</td>
+<td>設定画面を開きます。</td>
+</tr>
+<tr>
+<td>音声キャッシュ復元</td>
+<td>プレゼンテーション全体から音声オブジェクトのキャッシュファイルを復元します。</td>
+<td>音声キャッシュの復元が必要な場合に使います。</td>
+</tr>
+<tr>
+<td>辞書を取り込む</td>
+<td>音声合成エンジンの辞書をプレゼンテーションに記憶します。</td>
+<td>現在のリボン定義では無効化されています。</td>
+</tr>
+<tr>
+<td>音声合成エンジンにマージする</td>
+<td>プレゼンテーションに記憶した辞書を音声合成エンジンにマージします。</td>
+<td>現在のリボン定義では無効化されています。</td>
+</tr>
+<tr>
+<td>辞書を json ファイルに出力</td>
+<td>プレゼンテーションに記憶した辞書を JSON ファイルに出力します。</td>
+<td>現在のリボン定義では無効化されています。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">ナレーション</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/e0c2b99f-4de3-46c4-b427-660f6395a287" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>音声合成</td>
+<td>スライドノート内のテキストを音声合成します。</td>
+<td>生成済みの音声も作り直します。</td>
+</tr>
+<tr>
+<td>キャプション削除</td>
+<td>クローズドキャプションを削除します。</td>
+<td>プレゼンテーション内のキャプションが対象です。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">図形ツール</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/27874755-400b-4f1d-9922-264d6bef7c9a" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置の記憶</td>
+<td>スライド内の図形の位置を記憶します。</td>
+<td>テキスト枠や画像なども含みます。</td>
+</tr>
+<tr>
+<td>復元（すべて）</td>
+<td>記憶した位置に図形を戻します。</td>
+<td>スライド内のすべての図形が対象です。</td>
+</tr>
+<tr>
+<td>復元（選択）</td>
+<td>記憶した位置に図形を戻します。</td>
+<td>選択中の図形が対象です。</td>
+</tr>
+<tr>
+<td>連続軌跡</td>
+<td>選択図形に設定された複数の軌跡アニメーションを、連続した軌跡に調整します。</td>
+<td>軌跡アニメーションを複数設定した図形で使います。</td>
+</tr>
+<tr>
+<td>画像切抜</td>
+<td>画像を任意の図形で切り抜きます。</td>
+<td>画像に重ねた図形、図形グループ、またはフリーフォーム図形を切り抜き形状として使います。</td>
+</tr>
+<tr>
+<td>図形フィルター入力欄</td>
+<td>図形名を指定して、表示する図形を絞り込みます。</td>
+<td>例：<code>ABC*</code>、<code>*ABC*</code>。複数指定する場合は <code>boxA* boxB*</code> のようにスペースで区切ります。</td>
+</tr>
+<tr>
+<td>選択図形でフィルター</td>
+<td>選択した図形を基準に表示対象を絞り込みます。</td>
+<td>複数の図形を選択できます。</td>
+</tr>
+<tr>
+<td>選択図形以外でフィルター</td>
+<td>選択した図形以外を表示対象にします。</td>
+<td>複数の図形を選択できます。</td>
+</tr>
+<tr>
+<td>シリーズすべて（接頭辞*）</td>
+<td>選択図形の名前の接頭辞を使って、同じシリーズの図形を絞り込みます。</td>
+<td>図形名が連番などのシリーズになっている場合に使います。</td>
+</tr>
+<tr>
+<td>選択図形以降</td>
+<td>選択図形から後ろの図形を絞り込みます。</td>
+<td>図形の並び・番号を使った絞り込みです。</td>
+</tr>
+<tr>
+<td>先頭から選択図形まで</td>
+<td>先頭から選択図形までの図形を絞り込みます。</td>
+<td>図形の並び・番号を使った絞り込みです。</td>
+</tr>
+<tr>
+<td>フィルターリセット</td>
+<td>図形フィルターを解除します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>リネーム</td>
+<td>選択図形の名前を変更します。</td>
+<td>番号付きのリネームにも対応します。</td>
+</tr>
+<tr>
+<td>名前表示</td>
+<td>選択図形の名前をラベル形式で表示します。</td>
+<td>図形名を確認したいときに使います。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">ポインターツール</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/da538290-d45e-49b9-a4ca-6edf77598d6d" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>半透明ポインター：角丸四角／四角／矢印／円</td>
+<td>指定した形状のポインター図形を追加します。</td>
+<td>半透明の黄色い背景のスタイルです。</td>
+</tr>
+<tr>
+<td>光彩ポインター：角丸四角／四角／矢印／円／直線</td>
+<td>指定した形状のポインター図形を追加します。</td>
+<td>光彩を伴った赤枠のスタイルです。</td>
+</tr>
+<tr>
+<td>カスタムスタイルポインター：角丸四角／四角／矢印／円／直線</td>
+<td>カスタムスタイルを使ったポインター図形を追加します。</td>
+<td>形状は各項目名で選びます。</td>
+</tr>
+<tr>
+<td>図形をカスタムスタイルに設定</td>
+<td>選択した図形の外観をカスタムスタイルとして設定します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>リセット</td>
+<td>カスタムスタイルをリセットします。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>選択したポインターに適用</td>
+<td>選択した既存ポインターの外観をカスタムスタイルに変更します。</td>
+<td>選択したポインターが対象です。</td>
+</tr>
+<tr>
+<td>現在のスライドに適用</td>
+<td>現在のスライド上にあるポインターの外観をカスタムスタイルに変更します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>選択したスライドに適用</td>
+<td>選択したスライド上にあるポインターの外観をカスタムスタイルに変更します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>選択した図形をポインター化</td>
+<td>選択した図形をポインター図形として扱えるようにします。</td>
+<td>既存図形を使います。</td>
+</tr>
+<tr>
+<td>解除</td>
+<td>選択した図形をポインター図形から除外し、一般の図形に戻します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>グループ化</td>
+<td>選択したポインター図形をグループ化します。</td>
+<td>ポインターの順序を維持します。</td>
+</tr>
+<tr>
+<td>グループ解除</td>
+<td>ポインター図形のグループを解除します。</td>
+<td>ポインターの順序を維持します。</td>
+</tr>
+<tr>
+<td>表示順序</td>
+<td>ポインター図形の順序を確認・変更します。</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">編集</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/375b3880-df9b-40a5-a479-1947f5c75c82" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>スライドノート編集</td>
+<td>スライドノートをテキストボックスで編集します。</td>
+<td>PowerPoint 標準のノート編集の動作が遅い場合に役立ちます。</td>
+</tr>
+<tr>
+<td>アニメーション解除</td>
+<td>生成したアニメーションを解除し、図形を編集できる元の状態に戻します。</td>
+<td>図形を編集するときに使います。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_9">生成</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/b3ce0ad6-1d20-4e79-841d-fe7cacbe548f" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>音声とアニメの生成</td>
+<td>スライドノートの指示に基づいて音声とアニメーションを生成します。</td>
+<td>全スライドが対象です。</td>
+</tr>
+<tr>
+<td>プレビュー</td>
+<td>作業ウィンドウを表示したままアニメーションを再生します。</td>
+<td>生成結果の確認に使います。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">エクスポート</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/0fc7ddd5-6a83-4784-8053-7750bfe16f12" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>出力・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>動画出力</td>
+<td>動画スライドを作成する、または動画ファイルに出力します。</td>
+<td>MP4 出力に対応します。</td>
+</tr>
+<tr>
+<td>参照用資料（.pptx）</td>
+<td>アニメーションなどを消去した、参照用プレゼンテーションを出力します。</td>
+<td><code>.pptx</code></td>
+</tr>
+<tr>
+<td>スライドショー（.ppsx）</td>
+<td>非表示スライドを除いた、スライドショー専用のプレゼンテーションを出力します。</td>
+<td><code>.ppsx</code></td>
+</tr>
+<tr>
+<td>スライドタイムシート（.xlsx）</td>
+<td>スライド単位のタイムシートを出力します。</td>
+<td><code>.xlsx</code></td>
+</tr>
+<tr>
+<td>詳細タイムシート（.csv）</td>
+<td>詳細タイムシートを出力します。</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td>スライドノート（.txt）</td>
+<td>スライドノートをテキストファイルに出力します。</td>
+<td><code>.txt</code></td>
+</tr>
+<tr>
+<td>スピーチテキスト（.csv）</td>
+<td>スピーチテキストを CSV ファイルに出力します。</td>
+<td><code>.csv</code></td>
+</tr>
+<tr>
+<td>読み上げ音声ファイル（.wav/m4a）</td>
+<td>読み上げ音声をファイルに出力します。</td>
+<td><code>.wav</code>／<code>.m4a</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">ウィンドウ</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/ac189a13-8f4d-4599-87f0-27ae8c2d9b91" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ウィンドウに合わせる</td>
+<td>編集中のスライドを作業ウィンドウに合わせて表示します。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>下記全ての作業ウィンドウ</td>
+<td>書式、アニメーション、オブジェクトの選択の各ウィンドウを開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>書式ウィンドウ</td>
+<td>書式ウィンドウを開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>オブジェクト選択ウィンドウ</td>
+<td>オブジェクトの選択ウィンドウを開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>アニメーションウィンドウ</td>
+<td>アニメーションウィンドウを開きます。</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">情報</h3>
+<p><img alt="image" src="https://github.com/user-attachments/assets/829ea95e-634e-4c52-941d-ef770c2738c5" /></p>
+<table>
+<thead>
+<tr>
+<th>メニュー・項目</th>
+<th>目的・できること</th>
+<th>対象・補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ヘルプ</td>
+<td>NarraMaker のヘルプを開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>リリースノート</td>
+<td>リリースノートを開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>ダウンロード</td>
+<td>ダウンロード先を開きます。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>バージョン</td>
+<td>NarraMaker のバージョン情報を表示します。</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
