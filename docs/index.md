@@ -1,4 +1,4 @@
-# <img height="50" alt="image" src="https://github.com/user-attachments/assets/c5379874-634d-41f4-8707-66a5221829e9" />&nbsp;&nbsp;[NarraMaker](https://github.com/narramaker/narramaker/wiki)
+# <img height="70" alt="image" src="https://github.com/user-attachments/assets/c5379874-634d-41f4-8707-66a5221829e9" />&nbsp;&nbsp;[NarraMaker](https://github.com/narramaker/narramaker/wiki)
 
 PowerPoint でナレーション・アニメーション付きの動画作成を支援するツールです。  
 スライドノートに記載したナレーション指示に基づいて、音声ナレーションやアニメーションを生成します。
