@@ -7,17 +7,17 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>ディレクティブ - NarraMaker ドキュメント</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../css/brands.min.css" rel="stylesheet">
-        <link href="../css/solid.min.css" rel="stylesheet">
-        <link href="../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>NarraMaker ディレクティブ ヘルプ - NarraMaker</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <link href="../stylesheets/material-style.css" rel="stylesheet">
+        <link href="../../stylesheets/material-style.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">NarraMaker ドキュメント</a>
+                <a class="navbar-brand" href="../..">NarraMaker</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,43 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href=".." class="nav-link">ホーム</a>
+                                <a href="../.." class="nav-link">▶️ ホーム</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">▶️ ダウンロード</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../environment/" class="dropdown-item">▶️ 動作環境</a>
+</li>
+                                    
+<li>
+    <a href="../../get-started/" class="dropdown-item">▶️ 使ってみよう</a>
+</li>
+                                    
+<li>
+    <a href="../../download/" class="dropdown-item">▶️ ダウンロード</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">ディレクティブ</a>
+                                <a href="../../user-guide/" class="nav-link">▶️ ガイド</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../ui_7.2/" class="nav-link">リボン機能</a>
+                                <a href="../../help-top/" class="nav-link">▶️ ヘルプ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">▶️ ご利用条件</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../LICENSE/" class="dropdown-item">▶️ ライセンス</a>
+</li>
+                                    
+<li>
+    <a href="../../COMMUNITY/" class="dropdown-item">▶️ 開発コミュニティー</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -52,16 +82,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../ui_7.2/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -82,10 +102,6 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#narramaker" class="nav-link">NarraMaker ディレクティブ ヘルプ</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#_1" class="nav-link">適用バージョン</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             
@@ -93,70 +109,14 @@
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#0" class="nav-link">0. 記法と共通ルール</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#_3" class="nav-link">構文の読み方</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_4" class="nav-link">コメント</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_5" class="nav-link">通常の文章</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1. ディレクティブ一覧</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#_6" class="nav-link">コメント</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_7" class="nav-link">ナレーション</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_8" class="nav-link">ポインター</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_9" class="nav-link">アニメーション</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_10" class="nav-link">動画・効果音</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_11" class="nav-link">音声合成</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_12" class="nav-link">参照資料</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_13" class="nav-link">既定トリガー</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#2" class="nav-link">2. ナレーションと字幕</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#speech" class="nav-link">#speech</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#cc" class="nav-link">#cc</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#quiet-click" class="nav-link">#quiet と #click</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3. 音声合成設定</a>
@@ -165,34 +125,10 @@
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#4" class="nav-link">4. ポインター</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#p" class="nav-link">#p</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#pdef-phide" class="nav-link">#pDef と #pHide</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_14" class="nav-link">行中でのポインター</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#5" class="nav-link">5. アニメーション</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#_15" class="nav-link">表示・非表示</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_16" class="nav-link">スライドイン・スライドアウト</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_17" class="nav-link">図形間のモーション</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#6" class="nav-link">6. 動画・効果音</a>
@@ -201,90 +137,10 @@
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#7" class="nav-link">7. ブロック・その他</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#parallel" class="nav-link">#parallel</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#concatspeech" class="nav-link">#concatSpeech</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_20" class="nav-link">内部ディレクティブ</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_21" class="nav-link">参照資料への出力</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             <li class="nav-item" data-bs-level="2"><a href="#8" class="nav-link">8. パラメーター仕様</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="3"><a href="#_22" class="nav-link">必須・省略可能</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_23" class="nav-link">読み上げテキスト</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_24" class="nav-link">図形名</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_25" class="nav-link">動画オブジェクト名</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_26" class="nav-link">音声オブジェクト名</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_27" class="nav-link">遅延・期間</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_28" class="nav-link">期間</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_29" class="nav-link">トリガー</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_30" class="nav-link">方向</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_31" class="nav-link">ポインターオプション</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_32" class="nav-link">モーションオプション</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_33" class="nav-link">滑らかさ</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_34" class="nav-link">強調効果</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_35" class="nav-link">音声合成エンジン・ポート・話者</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_36" class="nav-link">音声合成の数値設定</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#_37" class="nav-link">図形名・オブジェクト名</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
               </ul>
@@ -301,15 +157,15 @@
 </ul>
 <h1 id="_2">目次</h1>
 <ul>
-<li><a href="#0">0. 記法と共通ルール</a></li>
-<li><a href="#1">1. ディレクティブ一覧</a></li>
-<li><a href="#2">2. ナレーションと字幕</a></li>
-<li><a href="#3">3. 音声合成設定</a></li>
-<li><a href="#4">4. ポインター</a></li>
-<li><a href="#5">5. アニメーション</a></li>
-<li><a href="#6">6. 動画・効果音</a></li>
-<li><a href="#7">7. ブロック・その他</a></li>
-<li><a href="#8">8. パラメーター仕様</a></li>
+<li><a href="#0-記法と共通ルール">0. 記法と共通ルール</a></li>
+<li><a href="#1-ディレクティブ一覧">1. ディレクティブ一覧</a></li>
+<li><a href="#2-ナレーションと字幕">2. ナレーションと字幕</a></li>
+<li><a href="#3-音声合成設定">3. 音声合成設定</a></li>
+<li><a href="#4-ポインター">4. ポインター</a></li>
+<li><a href="#5-アニメーション">5. アニメーション</a></li>
+<li><a href="#6-動画効果音">6. 動画・効果音</a></li>
+<li><a href="#7-ブロックその他">7. ブロック・その他</a></li>
+<li><a href="#8-パラメーター仕様">8. パラメーター仕様</a></li>
 </ul>
 <hr />
 <h2 id="0">0. 記法と共通ルール</h2>
@@ -320,7 +176,7 @@
 <li><code>[#</code> で始まり <code>]</code> で終わる部分がディレクティブです。</li>
 <li><code>:</code> は引数の区切りです。引数を省略して後続の引数を指定するときも、区切りの <code>:</code> を残してください。</li>
 <li>書式中の <code>&lt;パラメーター&gt;</code> は必須、<code>(パラメーター)</code> は省略可能です。括弧や山括弧は実際に入力しません。</li>
-<li>書式中のパラメーター名をクリックすると、<a href="#8">パラメーター仕様</a>の説明へ移動します。</li>
+<li>書式中のパラメーター名をクリックすると、<a href="#8-パラメーター仕様">パラメーター仕様</a>の説明へ移動します。</li>
 <li>ディレクティブ名と予約値（トリガーやオプション）は大文字・小文字を区別しません。図形名や音声エンジン名などは、実際の登録名を指定してください。</li>
 <li>必須引数を省略したり、定義より多くの引数を指定したりすると、検証時にエラーまたは警告になります。</li>
 </ul>
@@ -355,7 +211,7 @@
 <p>ディレクティブではない行の文章は、ナレーションとして読み上げられます。文章の途中に <code>[#p]</code> を置くと、その位置でポインターを実行できます。</p>
 <pre><code class="language-text">ここを説明します。[#p]次の図形を見てください。
 </code></pre>
-<p>明示的に <code>#speech</code> を使う場合、読み上げテキスト中の <code>:</code> は引数区切りと解釈されます。文章中の字幕と読み上げ内容を変える書式は「<a href="#2">ナレーションと字幕</a>」を参照してください。</p>
+<p>明示的に <code>#speech</code> を使う場合、読み上げテキスト中の <code>:</code> は引数区切りと解釈されます。文章中の字幕と読み上げ内容を変える書式は「<a href="#2-ナレーションと字幕">ナレーションと字幕</a>」を参照してください。</p>
 <hr />
 <h2 id="1">1. ディレクティブ一覧</h2>
 <p>既定トリガーは、個別の引数で指定しなかった場合に使われる実行条件です。<code>With</code> は直前の動作と同時、<code>After</code> は直前の動作の後、<code>Click</code> はクリックまたは Enter 待ちです。</p>
@@ -1170,13 +1026,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
