@@ -5,6 +5,8 @@ theme:
   name: mkdocs
   language: ja
   navigation_depth: 2
+  analytics:
+    gtag: G-4RSQM49FHR # GA4 測定 ID（例: G-XXXXXXXXXX）を設定すると有効になります
 
 extra_css:
   - stylesheets/material-style.css
