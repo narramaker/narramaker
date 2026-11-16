@@ -11,13 +11,18 @@ theme:
 extra_css:
   - stylesheets/material-style.css
 
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+
 nav:
   - ▶️ ホーム: index.md
   - ▶️ ダウンロード: 
     - ▶️ 動作環境: environment.md
     - ▶️ 使ってみよう: get-started.md
     - ▶️ ダウンロード: download.md
-  - ▶️ ガイド: user-guide.md
+  - ▶️ ガイド・FAQ: guide-top.md
   - ▶️ ヘルプ: help-top.md
   - ▶️ ご利用条件: 
     - ▶️ ライセンス: LICENSE.md

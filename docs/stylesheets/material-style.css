@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap");
 
 :root {
-  --bs-primary: #4051b5;
-  --bs-primary-rgb: 64, 81, 181;
-  --bs-link-color: #526cfe;
-  --bs-link-color-rgb: 82, 108, 254;
-  --bs-link-hover-color: #4051b5;
-  --bs-link-hover-color-rgb: 64, 81, 181;
+  --bs-primary: rgb(15, 110, 27);
+  --bs-primary-rgb: 15, 110, 27;
+  --bs-link-color: rgb(15, 110, 27);
+  --bs-link-color-rgb: 15, 110, 27;
+  --bs-link-hover-color: rgb(143, 57, 20);
+  --bs-link-hover-color-rgb: 143, 57, 20;
   --bs-body-color: #212121;
   --bs-body-bg: #fff;
 }

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Speech app installation guide - NarraMaker</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../stylesheets/material-style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RSQM49FHR"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-4RSQM49FHR");
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">NarraMaker</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">▶️ ホーム</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">▶️ ダウンロード</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../environment/" class="dropdown-item">▶️ 動作環境</a>
+</li>
+                                    
+<li>
+    <a href="../../get-started/" class="dropdown-item">▶️ 使ってみよう</a>
+</li>
+                                    
+<li>
+    <a href="../../download/" class="dropdown-item">▶️ ダウンロード</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../guide-top/" class="nav-link">▶️ ガイド・FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../help-top/" class="nav-link">▶️ ヘルプ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">▶️ ご利用条件</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../LICENSE/" class="dropdown-item">▶️ ライセンス</a>
+</li>
+                                    
+<li>
+    <a href="../../COMMUNITY/" class="dropdown-item">▶️ 開発コミュニティー</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">概要</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">ステップ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#1-aivisspeech" class="nav-link">1. AivisSpeech のダウンロード</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#2-aivisspeech" class="nav-link">2. AivisSpeech のインストール</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3. 音声合成モデルの追加 (任意)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#4-narramaker" class="nav-link">4. NarraMakerおすすめ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="_1">概要</h2>
+<p>音声合成アプリのひとつとして、AivisSpeech のインストール手順を説明します。  </p>
+<h2 id="_2">ステップ</h2>
+<ol>
+<li>AivisSpeech のダウンロード  </li>
+<li>AivisSpeech のインストール  </li>
+<li>音声合成モデルの追加 (任意)  </li>
+<li>NarraMaker からのおすすめ</li>
+</ol>
+<p><br></p>
+<hr />
+<h2 id="1-aivisspeech">1. AivisSpeech のダウンロード</h2>
+<h4 id="11-aivisspeech">1.1. AivisSpeechサイトへのアクセス</h4>
+<ul>
+<li>https://aivis-project.com/ にアクセスします。  <br />
+    または、Google等で AivisSpeech を検索してアクセスしてください。<br />
+<br><br></li>
+</ul>
+<h4 id="12">1.2. ダウンロードをクリック</h4>
+<ul>
+<li>画面右上の <strong>[AivisSpeechをダウンロード]</strong> というボタンを見つけてクリックします。<br />
+<br><br></li>
+</ul>
+<h4 id="13">1.3. ダウンロードファイルを選択</h4>
+<ul>
+<li>
+<p>自分の環境に適したインストーラーをダウンロードします。  </p>
+</li>
+<li>
+<p><em>ダウンロードで警告が出た場合</em>  </p>
+<blockquote>
+<pre><code>  AivisSpeech-中略.exeは一般的にダウンロードされていません。  
+  AivisSpeech-中略.exe.exeを開く前に、信頼できることを確認してください。
+</code></pre>
+<ul>
+<li>この警告は Windows Defender が発しているものです。 <br />
+    世界的に見てダウンロード実績の少ないソフトウェアで発生することがあります。<br />
+    気になる方は警告の意味を検索してみてください。  </li>
+<li><strong>対処方法</strong><br />
+    三点リーダー(…)から <strong>[保存]</strong> を選択します。<br />
+    確認画面でキャンセルボタン横のプルダウンで、改めて <strong>[保存]</strong> を選択します。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p><br><br></p>
+<hr />
+<h2 id="2-aivisspeech">2. AivisSpeech のインストール</h2>
+<h4 id="21">2.1. インストール実行</h4>
+<ul>
+<li>ダウンロードしたファイルをダブルクリックしてインストールを開始します。</li>
+<li>インストールオプションは一般的なものですので、説明はを省略します。<br />
+<br><br></li>
+</ul>
+<hr />
+<h2 id="3">3. 音声合成モデルの追加 (任意)</h2>
+<h4 id="aivishub">AivisHub について</h4>
+<ul>
+<li>AivisSpeechには１種類の音声合成モデルがプリインストールされていますが、後から音声合成モデルを追加することができます。</li>
+<li>追加の音声合成モデルは AivisHub というコミュニティーサイトから入手可能です。</li>
+<li>登録されている音声合成モデルは、コミュニティーのユーザーが作成したものです。</li>
+<li>手順の概要を示しますので、必要に応じて音声モデルを追加してください。
+<br><br></li>
+</ul>
+<h4 id="_3">音声合成モデルのライセンスについて</h4>
+<ul>
+<li>それぞれの作成者が音声合成モデルごとにライセンス条件を設定しています。</li>
+<li>利用にあたってはライセンス条件を必ず確認してください。</li>
+<li>
+<p>商用利用にも優しいライセンスが多いですが、クレジット表記の要否はよく確認しましょう。
+<br><br></p>
+</li>
+<li>
+<p><strong>AivisHubサイトへのアクセス</strong>  </p>
+<ol>
+<li>AivisSpeechを起動します。</li>
+<li>メニューから [音声合成モデル] &gt; [AivisHubで音声合成モデルを探す] を選択。<br />
+AivisHubサイトが開きます。  </li>
+</ol>
+</li>
+<li>
+<p><strong>検索と視聴</strong>  </p>
+<ul>
+<li>おすすめの他に <strong>｢もっと見る｣</strong> をクリックすると詳細な条件できます。</li>
+<li>個々の音声合成モデルを視聴して必要なモデルを決めます。</li>
+</ul>
+</li>
+<li>
+<p><strong>ダウンロード</strong>  </p>
+<ol>
+<li>使用したい音声合成モデルのページを開きます。</li>
+<li><strong>[AIVMXをダウンロード (xxxMB)]</strong> を押してダウンロードします。</li>
+</ol>
+</li>
+<li>
+<p><strong>AivisSpeechへの音声合成モデルインストール</strong></p>
+<ol>
+<li>AivisSpeechを起動します。</li>
+<li>メニューから [音声合成モデル] &gt; [音声合成モデルのインストール・管理] を選択。</li>
+<li>画面右上[インストール / 更新]を押下。</li>
+<li>ダウンロードしたファイルを選択して、画面<strong>右下</strong>[インストール / 更新]を押下。</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="4-narramaker">4. NarraMakerおすすめ</h2>
+<p>以下の音声モデルは「説明する」という目的に対しては使いやすい音声モデルです。
+- morioki
+- にせ</p>
+<p><br><br><br>
+<em>最終更新日: 2026-09-05 NarraMaker</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

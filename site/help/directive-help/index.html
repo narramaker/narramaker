@@ -19,7 +19,15 @@
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <link href="../../stylesheets/material-style.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
+        <script>hljs.highlightAll();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RSQM49FHR"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-4RSQM49FHR");
+        </script> 
     </head>
 
     <body>
@@ -56,7 +64,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="../../user-guide/" class="nav-link">▶️ ガイド</a>
+                                <a href="../../guide-top/" class="nav-link">▶️ ガイド・FAQ</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../../help-top/" class="nav-link">▶️ ヘルプ</a>
@@ -157,26 +165,26 @@
 </ul>
 <h1 id="_2">目次</h1>
 <ul>
-<li><a href="#0-記法と共通ルール">0. 記法と共通ルール</a></li>
-<li><a href="#1-ディレクティブ一覧">1. ディレクティブ一覧</a></li>
-<li><a href="#2-ナレーションと字幕">2. ナレーションと字幕</a></li>
-<li><a href="#3-音声合成設定">3. 音声合成設定</a></li>
-<li><a href="#4-ポインター">4. ポインター</a></li>
-<li><a href="#5-アニメーション">5. アニメーション</a></li>
-<li><a href="#6-動画効果音">6. 動画・効果音</a></li>
-<li><a href="#7-ブロックその他">7. ブロック・その他</a></li>
-<li><a href="#8-パラメーター仕様">8. パラメーター仕様</a></li>
+<li><a href="#0">0. 記法と共通ルール</a></li>
+<li><a href="#1">1. ディレクティブ一覧</a></li>
+<li><a href="#2">2. ナレーションと字幕</a></li>
+<li><a href="#3">3. 音声合成設定</a></li>
+<li><a href="#4">4. ポインター</a></li>
+<li><a href="#5">5. アニメーション</a></li>
+<li><a href="#6">6. 動画・効果音</a></li>
+<li><a href="#7">7. ブロック・その他</a></li>
+<li><a href="#8">8. パラメーター仕様</a></li>
 </ul>
 <hr />
 <h2 id="0">0. 記法と共通ルール</h2>
 <h3 id="_3">構文の読み方</h3>
-<pre><code>[#ディレクティブ名:(<a href="#param-optional">引数1</a>):&lt;<a href="#param-required">引数2</a>&gt;]</code></pre>
-
+<pre><code class="language-text">[#ディレクティブ名:(引数1):&lt;引数2&gt;]
+</code></pre>
 <ul>
 <li><code>[#</code> で始まり <code>]</code> で終わる部分がディレクティブです。</li>
 <li><code>:</code> は引数の区切りです。引数を省略して後続の引数を指定するときも、区切りの <code>:</code> を残してください。</li>
 <li>書式中の <code>&lt;パラメーター&gt;</code> は必須、<code>(パラメーター)</code> は省略可能です。括弧や山括弧は実際に入力しません。</li>
-<li>書式中のパラメーター名をクリックすると、<a href="#8-パラメーター仕様">パラメーター仕様</a>の説明へ移動します。</li>
+<li>書式中のパラメーターの意味は、<a href="#8">パラメーター仕様</a>を参照してください。</li>
 <li>ディレクティブ名と予約値（トリガーやオプション）は大文字・小文字を区別しません。図形名や音声エンジン名などは、実際の登録名を指定してください。</li>
 <li>必須引数を省略したり、定義より多くの引数を指定したりすると、検証時にエラーまたは警告になります。</li>
 </ul>
@@ -201,7 +209,7 @@
 <td>1行コメント。<code>[#</code> で始まらない角括弧内はコメントとして扱われます。</td>
 </tr>
 <tr>
-<td><code>[##&lt;]</code><br>コメントする行<br><code>[##&gt;]</code></td>
+<td><code>[##&lt;]</code> → コメントする行 → <code>[##&gt;]</code></td>
 <td>ブロックコメント。開始から終了までの内容を読み飛ばします。</td>
 </tr>
 </tbody>
@@ -211,7 +219,7 @@
 <p>ディレクティブではない行の文章は、ナレーションとして読み上げられます。文章の途中に <code>[#p]</code> を置くと、その位置でポインターを実行できます。</p>
 <pre><code class="language-text">ここを説明します。[#p]次の図形を見てください。
 </code></pre>
-<p>明示的に <code>#speech</code> を使う場合、読み上げテキスト中の <code>:</code> は引数区切りと解釈されます。文章中の字幕と読み上げ内容を変える書式は「<a href="#2-ナレーションと字幕">ナレーションと字幕</a>」を参照してください。</p>
+<p>明示的に <code>#speech</code> を使う場合、読み上げテキスト中の <code>:</code> は引数区切りと解釈されます。文章中の字幕と読み上げ内容を変える書式は「<a href="#2">ナレーションと字幕</a>」を参照してください。</p>
 <hr />
 <h2 id="1">1. ディレクティブ一覧</h2>
 <p>既定トリガーは、個別の引数で指定しなかった場合に使われる実行条件です。<code>With</code> は直前の動作と同時、<code>After</code> は直前の動作の後、<code>Click</code> はクリックまたは Enter 待ちです。</p>
@@ -529,8 +537,8 @@
 <hr />
 <h2 id="2">2. ナレーションと字幕</h2>
 <h3 id="speech"><code>#speech</code></h3>
-<pre><code>[#speech:(<a href="#param-speech-text">読み上げテキスト</a>):(<a href="#param-delay">遅延</a>)::(<a href="#param-trigger">トリガー</a>)]</code></pre>
-
+<pre><code class="language-text">[#speech:(読み上げテキスト):(遅延)::(トリガー)]
+</code></pre>
 <p>テキスト、遅延、トリガーは省略できます。トリガーは4番目の引数です。3番目の引数は未使用のため、トリガーを指定するときも空欄にします。</p>
 <pre><code class="language-text">[#speech:おはようございます]
 
@@ -549,10 +557,10 @@
 </code></pre>
 <p><code>On</code> でクローズドキャプションを生成し、<code>Off</code> で生成しません。引数を省略すると、NarraMaker の設定に従います。</p>
 <h3 id="quiet-click"><code>#quiet</code> と <code>#click</code></h3>
-<pre><code>[#quiet:(<a href="#param-duration">期間</a>)]
+<pre><code class="language-text">[#quiet:(期間)]
 
-[#click]</code></pre>
-
+[#click]
+</code></pre>
 <p><code>#quiet</code> は指定した秒数だけ無音で待機します。期間を省略すると既定の待機時間を使います。<code>#click</code> はクリックまたは Enter が入力されるまで待ちます。</p>
 <hr />
 <h2 id="3">3. 音声合成設定</h2>
@@ -621,8 +629,8 @@
 <hr />
 <h2 id="4">4. ポインター</h2>
 <h3 id="p"><code>#p</code></h3>
-<pre><code>[#p:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-options">オプション</a>):(<a href="#param-smoothing">滑らかさ</a>):(<a href="#param-emphasis">強調効果</a>)]</code></pre>
-
+<pre><code class="language-text">[#p:(遅延):(期間):(トリガー):(オプション):(滑らかさ):(強調効果)]
+</code></pre>
 <p>すべての引数を省略できます。遅延・期間・トリガーを省略した場合は、<code>#pDef</code> で設定した既定値を使います。オプションには <code>KeepFrom</code> を指定できます。</p>
 <pre><code class="language-text">[#p]
 
@@ -631,10 +639,10 @@
 [#p:::After:KeepFrom]
 </code></pre>
 <h3 id="pdef-phide"><code>#pDef</code> と <code>#pHide</code></h3>
-<pre><code>[#pDef:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>)]
+<pre><code class="language-text">[#pDef:(遅延):(期間):(トリガー)]
 
-[#pHide:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>)]</code></pre>
-
+[#pHide:(遅延):(期間):(トリガー)]
+</code></pre>
 <ul>
 <li><code>#pDef</code> は後続の <code>#p</code> の既定値を変更します。省略した項目は既定値のままです。</li>
 <li><code>#pHide</code> はポインターをフェードアウトします。</li>
@@ -647,25 +655,25 @@
 <hr />
 <h2 id="5">5. アニメーション</h2>
 <h3 id="_15">表示・非表示</h3>
-<pre><code>[#show:&lt;<a href="#param-shape-name">図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-emphasis">強調効果</a>)]
+<pre><code class="language-text">[#show:&lt;図形名&gt;:(遅延):(期間):(トリガー):(強調効果)]
 
-[#hide:&lt;<a href="#param-shape-name">図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>)]</code></pre>
-
+[#hide:&lt;図形名&gt;:(遅延):(期間):(トリガー)]
+</code></pre>
 <h3 id="_16">スライドイン・スライドアウト</h3>
-<pre><code>[#slideIn:&lt;<a href="#param-shape-name">図形名</a>&gt;:&lt;<a href="#param-direction">方向</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-emphasis">強調効果</a>)]
+<pre><code class="language-text">[#slideIn:&lt;図形名&gt;:&lt;方向&gt;:(遅延):(期間):(トリガー):(強調効果)]
 
-[#slideOut:&lt;<a href="#param-shape-name">図形名</a>&gt;:&lt;<a href="#param-direction">方向</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>)]</code></pre>
-
+[#slideOut:&lt;図形名&gt;:&lt;方向&gt;:(遅延):(期間):(トリガー)]
+</code></pre>
 <p>方向は <code>Left</code>、<code>Right</code>、<code>Up</code>、<code>Down</code> です。図形名と方向は必須です。</p>
 <h3 id="_17">図形間のモーション</h3>
-<pre><code>[#motion:(<a href="#param-shape-name">From図形名</a>):&lt;<a href="#param-shape-name">To図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-motion-options">Fromオプション</a>):(<a href="#param-motion-options">Toオプション</a>):(<a href="#param-motion-options">サイズオプション</a>):(<a href="#param-smoothing">滑らかさ</a>):(<a href="#param-emphasis">強調効果</a>)]
+<pre><code class="language-text">[#motion:(From図形名):&lt;To図形名&gt;:(遅延):(期間):(トリガー):(Fromオプション):(Toオプション):(サイズオプション):(滑らかさ):(強調効果)]
 
-[#motionIn:(<a href="#param-shape-name">From図形名</a>):&lt;<a href="#param-shape-name">To図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-smoothing">滑らかさ</a>):(<a href="#param-emphasis">強調効果</a>)]
+[#motionIn:(From図形名):&lt;To図形名&gt;:(遅延):(期間):(トリガー):(滑らかさ):(強調効果)]
 
-[#motionOut:(<a href="#param-shape-name">From図形名</a>):&lt;<a href="#param-shape-name">To図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-smoothing">滑らかさ</a>)]
+[#motionOut:(From図形名):&lt;To図形名&gt;:(遅延):(期間):(トリガー):(滑らかさ)]
 
-[#move:(<a href="#param-shape-name">From図形名</a>):&lt;<a href="#param-shape-name">To図形名</a>&gt;:(<a href="#param-delay">遅延</a>):(<a href="#param-duration">期間</a>):(<a href="#param-trigger">トリガー</a>):(<a href="#param-smoothing">滑らかさ</a>):(<a href="#param-emphasis">強調効果</a>)]</code></pre>
-
+[#move:(From図形名):&lt;To図形名&gt;:(遅延):(期間):(トリガー):(滑らかさ):(強調効果)]
+</code></pre>
 <p>To図形名は必須、From図形名は省略できます。図形Aから図形Bへ移るアニメーションでは、Aの位置・サイズ・回転などを基準にBへ動かします。<code>#motionIn</code> は移動しながら表示し、<code>#motionOut</code> は移動しながら非表示にします。<code>#move</code> は図形A自体を図形Bの位置へ移動します。</p>
 <h4 id="fromtomotion">From／To／サイズのオプション（<code>#motion</code>）</h4>
 <table>
@@ -767,14 +775,14 @@
 <p><code>#move</code> では <code>Wave</code> を指定できません。</p>
 <hr />
 <h2 id="6">6. 動画・効果音</h2>
-<pre><code>[#se:&lt;<a href="#param-sound-name">音声オブジェクト名</a>&gt;:(<a href="#param-delay">遅延</a>)::(<a href="#param-trigger">トリガー</a>)]
+<pre><code class="language-text">[#se:&lt;音声オブジェクト名&gt;:(遅延)::(トリガー)]
 
-[#play:&lt;<a href="#param-movie-name">動画オブジェクト名</a>&gt;:(<a href="#param-delay">遅延</a>)::(<a href="#param-trigger">トリガー</a>)]
+[#play:&lt;動画オブジェクト名&gt;:(遅延)::(トリガー)]
 
-[#playWith:&lt;<a href="#param-movie-name">動画オブジェクト名</a>&gt;:(<a href="#param-delay">遅延</a>)::(<a href="#param-trigger">トリガー</a>)]
+[#playWith:&lt;動画オブジェクト名&gt;:(遅延)::(トリガー)]
 
-[#playPause:&lt;<a href="#param-movie-name">動画オブジェクト名</a>&gt;:(<a href="#param-delay">遅延</a>)::(<a href="#param-trigger">トリガー</a>)]</code></pre>
-
+[#playPause:&lt;動画オブジェクト名&gt;:(遅延)::(トリガー)]
+</code></pre>
 <p><code>#se</code> と <code>#play</code> の既定トリガーは <code>After</code>、<code>#playWith</code> と <code>#playPause</code> の既定トリガーは <code>With</code> です。3番目の引数は未使用のため、トリガーを指定する場合も空欄にします。<code>#playWith</code> は旧書式のため、トリガー欄の値にかかわらず <code>With</code> で実行されます。</p>
 <pre><code class="language-text">[#se:拍手:0.2::With]
 
@@ -800,39 +808,30 @@
 <p><code>#divSpeech</code> / <code>#endDivSpeech</code> は、文章中のポインターや <code>#concatSpeech</code> の処理で内部的に使われるディレクティブです。通常はノートに直接記述する必要はありません。</p>
 <p><code>#concat</code> / <code>#endConcat</code> は旧ディレクティブです。現在の処理では動作を定義していないため、新しいノートでは使用せず、読み上げの結合には <code>#concatSpeech</code> を使用してください。</p>
 <h3 id="_21">参照資料への出力</h3>
-<pre><code>[#noCopy:&lt;<a href="#param-shape-name">オブジェクト名</a>&gt;]
+<pre><code class="language-text">[#noCopy:&lt;オブジェクト名&gt;]
 
-[#noCopySlide]</code></pre>
-
+[#noCopySlide]
+</code></pre>
 <ul>
 <li><code>#noCopy</code> は指定したオブジェクトを参照資料に出力しません。</li>
 <li><code>#noCopySlide</code> はそのスライドを参照資料に出力しません。</li>
 </ul>
 <hr />
 <h2 id="8">8. パラメーター仕様</h2>
-<p><a id="param-required"></a>
-<a id="param-optional"></a></p>
 <h3 id="_22">必須・省略可能</h3>
 <p>書式では <code>&lt;パラメーター&gt;</code> が必須、<code>(パラメーター)</code> が省略可能です。省略可能な引数は、指定しない場合でも後続の引数を使うために <code>:</code> の位置を保ちます。以下の書式表記は <code>clsNarraSyntax</code> の構文定義に従っています。</p>
-<p><a id="param-speech-text"></a></p>
 <h3 id="_23">読み上げテキスト</h3>
 <p><code>#speech</code> の読み上げ内容です。省略すると、ノート本文などから処理されたテキストが使われます。</p>
-<p><a id="param-shape-name"></a></p>
 <h3 id="_24">図形名</h3>
 <p>対象となるスライド上の図形名です。モーション系では From図形名は省略可能、To図形名は必須です。</p>
-<p><a id="param-movie-name"></a></p>
 <h3 id="_25">動画オブジェクト名</h3>
 <p>スライド上にある動画オブジェクトの名前です。動画ディレクティブでは必須です。</p>
-<p><a id="param-sound-name"></a></p>
 <h3 id="_26">音声オブジェクト名</h3>
 <p>プレゼンテーション内にある音声オブジェクトの名前です。音声ディレクティブでは必須です。</p>
-<p><a id="param-delay"></a></p>
 <h3 id="_27">遅延・期間</h3>
 <p>遅延はアニメーションや再生を開始するまでの秒数です。<code>0</code>～<code>59</code> の数値を指定できます。省略した場合は、ディレクティブごとの既定値を使用します。</p>
-<p><a id="param-duration"></a></p>
 <h3 id="_28">期間</h3>
 <p>アニメーションまたは無音待機の長さを秒数で指定します。<code>0</code>～<code>59</code> の数値を指定できます。省略した場合は、ディレクティブごとの既定値を使用します。</p>
-<p><a id="param-trigger"></a></p>
 <h3 id="_29">トリガー</h3>
 <table>
 <thead>
@@ -863,13 +862,10 @@
 
 [#show:図形名:::Click]
 </code></pre>
-<p><a id="param-direction"></a></p>
 <h3 id="_30">方向</h3>
 <p><code>#slideIn</code> と <code>#slideOut</code> で使う方向です。<code>Left</code>、<code>Right</code>、<code>Up</code>、<code>Down</code> のいずれかを指定します。</p>
-<p><a id="param-options"></a></p>
 <h3 id="_31">ポインターオプション</h3>
 <p><code>#p</code> のオプションには <code>KeepFrom</code> を指定できます。ポインターの移動元を残して終了します。</p>
-<p><a id="param-motion-options"></a></p>
 <h3 id="_32">モーションオプション</h3>
 <p><code>#motion</code> で指定できるオプションです。</p>
 <table>
@@ -903,7 +899,6 @@
 </tr>
 </tbody>
 </table>
-<p><a id="param-smoothing"></a></p>
 <h3 id="_33">滑らかさ</h3>
 <p><code>#p</code>、<code>#motion</code>、<code>#motionIn</code>、<code>#motionOut</code>、<code>#move</code> で指定できます。</p>
 <table>
@@ -936,7 +931,6 @@
 </tr>
 </tbody>
 </table>
-<p><a id="param-emphasis"></a></p>
 <h3 id="_34">強調効果</h3>
 <p>効果欄があるアニメーションディレクティブで指定できます。</p>
 <table>
@@ -970,14 +964,12 @@
 </tbody>
 </table>
 <p><code>#move</code> では <code>Wave</code> を指定できません。</p>
-<p><a id="param-engine"></a></p>
 <h3 id="_35">音声合成エンジン・ポート・話者</h3>
 <ul>
 <li>エンジン名は NarraMaker に設定されている名前を指定します。</li>
 <li>ポート番号は5桁の数字です。</li>
 <li><code>#speaker</code> のモデル名は必須、スタイル名は省略可能です。</li>
 </ul>
-<p><a id="param-numeric"></a></p>
 <h3 id="_36">音声合成の数値設定</h3>
 <table>
 <thead>
