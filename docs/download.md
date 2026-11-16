@@ -1,6 +1,8 @@
 # NarraMaker ダウンロード
 
-## [<img height="160" alt="image" src="https://github.com/user-attachments/assets/8dab9594-6e3f-4bae-8f76-72ec78a193fe" />](https://github.com/narramaker/narramaker/releases/download/v2.6.2/NarraMaker-2.6.2.zip)
+## [<img height="160" alt="image" src="https://github.com/user-attachments/assets/8dab9594-6e3f-4bae-8f76-72ec78a193fe" />](https://github.com/narramaker/narramaker/releases/download/v2.6.2/NarraMaker-2.6.2.zip)  <img height="160" alt="image" src="https://github.com/user-attachments/assets/7ffdcf0f-6618-4d8b-bf5c-7c4692b07ae4" />
+
+
 
 ## NarraMaker 2.7.0 リリース概要
 
